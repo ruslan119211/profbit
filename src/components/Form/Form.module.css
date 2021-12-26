@@ -1,0 +1,62 @@
+.form_wrap {
+    display: flex;
+    flex-direction: column;
+}
+.form_wrap .main{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+.form_wrap .main > div{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.form_wrap .main > div label{
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.form_wrap .main > div textarea,
+.form_wrap .main > div input{
+    padding: 10px 15px;
+    font-size: 14px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+}
+.form_wrap .main > div textarea{
+    resize: none;
+}
+.form_wrap .btn_wrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 15px 0;
+}
+.form_wrap .btn_wrap button{
+    width: 100%;
+    border: 1px solid #cdcdcd;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.form_wrap .message_text{
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    font-width: 500;
+}
+.form_wrap .message_text.error{
+    color: red;
+}
+.form_wrap .message_text.success{
+    color: #0cb80c;
+}
+@media screen and (max-width: 560px){
+
+    .form_wrap .btn_wrap{
+        flex-direction: column;
+    }
+}
