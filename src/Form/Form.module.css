@@ -1,9 +1,0 @@
-.Form {
-    display: flex;
-    flex-direction: column;
-}
-.Form .main{
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-}
